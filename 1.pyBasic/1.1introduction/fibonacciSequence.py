@@ -11,7 +11,7 @@ def main():
     result = fbis(10)
     fobj = open('result.txt','w+')
     for i,num in enumerate(result):
-        print("index %d is %d" % (i,num))#多個變數時要加小括號
+        print("index {0:d} is {1:d}".format(i,num))#多個變數時要加小括號
         fobj.write("%d " % num)
         time.sleep(1)
 
